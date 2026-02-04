@@ -24,4 +24,13 @@
       <ProjectReference Include="..\SharedService.SharedKernel\SharedService.SharedKernel.csproj" />
     </ItemGroup>
 
+  <PropertyGroup>
+    <PackageId>IstredDev.Framework</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Istred</Authors>
+    <Company>Istred</Company>
+    <PackageDescription>Framework</PackageDescription>
+    <RepositoryUrl>https://github.com/EugenTovarchi/SharedService</RepositoryUrl>
+  </PropertyGroup>
+
 </Project>

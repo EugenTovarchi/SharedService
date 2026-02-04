@@ -11,4 +11,13 @@
       <PackageReference Include="Scrutor" />
     </ItemGroup>
 
+  <PropertyGroup>
+    <PackageId>IstredDev.Core</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Istred</Authors>
+    <Company>Istred</Company>
+    <PackageDescription>Core</PackageDescription>
+    <RepositoryUrl>https://github.com/EugenTovarchi/SharedService</RepositoryUrl>
+  </PropertyGroup>
+
 </Project>

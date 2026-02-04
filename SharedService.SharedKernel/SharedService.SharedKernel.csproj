@@ -10,8 +10,8 @@
     <Version>0.0.1</Version>
     <Authors>Istred</Authors>
     <Company>Istred</Company>
-    <PackageDescription>Istred</PackageDescription>
-    <RepositoryUrl></RepositoryUrl>
+    <PackageDescription>SharedKernel</PackageDescription>
+    <RepositoryUrl>https://github.com/EugenTovarchi/SharedService</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
