@@ -24,8 +24,6 @@ public static class LoggingExtensions
                 .CreateLogger();
         }
 
-        services.AddSingleton<DiagnosticContext>();
-
         services.AddSerilog();
 
         return services;
