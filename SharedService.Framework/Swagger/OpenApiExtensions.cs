@@ -5,17 +5,17 @@ namespace SharedService.Framework.Swagger;
 
 public static class OpenApiExtensions
 {
-    public static IServiceCollection AddOpenApiSpec(this IServiceCollection services)
+    public static IServiceCollection AddOpenApiSpec(this IServiceCollection services, string serviceName = "Service")
     {
         services.AddSwaggerGen(options =>
         {
             options.SwaggerDoc("v1", new OpenApiInfo
             {
-                Title = "DirectoryService",
+                Title = $"{serviceName} API",
                 Version = "v1",
                 Contact = new OpenApiContact
                 {
-                    Name = "Yudjine"
+                    Name = "Your company"
                 }
             });
         });

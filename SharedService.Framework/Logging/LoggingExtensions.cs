@@ -1,20 +1,27 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
+using Serilog.Core;
 using Serilog.Exceptions;
 
 namespace SharedService.Framework.Logging;
 
 public static class LoggingExtensions
 {
-    public static IServiceCollection AddSerilogLogging(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddSerilogLogging(
+        this IServiceCollection services,
+        IConfiguration configuration,
+        string serviceName = "Service")
     {
-        services.AddSerilog((serviceProvider, lc) => lc
-            .ReadFrom.Configuration(configuration)
-            .ReadFrom.Services(serviceProvider)
-            .Enrich.FromLogContext()
-            .Enrich.WithExceptionDetails()
-            .Enrich.WithProperty("ServiceName", "DirectoryService"));
+        if (Log.Logger == null || !(Log.Logger is Logger))
+        {
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(configuration)
+                .Enrich.FromLogContext()
+                .Enrich.WithExceptionDetails()
+                .Enrich.WithProperty("ServiceName", serviceName)
+                .CreateLogger();
+        }
 
         return services;
     }
