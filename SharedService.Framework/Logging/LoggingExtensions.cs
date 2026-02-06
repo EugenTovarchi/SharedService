@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Core;
 using Serilog.Exceptions;
+using Serilog.Extensions.Hosting;
 
 namespace SharedService.Framework.Logging;
 
@@ -22,6 +23,10 @@ public static class LoggingExtensions
                 .Enrich.WithProperty("ServiceName", serviceName)
                 .CreateLogger();
         }
+
+        services.AddSingleton<DiagnosticContext>();
+
+        services.AddSerilog();
 
         return services;
     }
