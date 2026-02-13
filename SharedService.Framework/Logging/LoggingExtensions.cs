@@ -3,7 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Core;
 using Serilog.Exceptions;
-using Serilog.Extensions.Hosting;
 
 namespace SharedService.Framework.Logging;
 
