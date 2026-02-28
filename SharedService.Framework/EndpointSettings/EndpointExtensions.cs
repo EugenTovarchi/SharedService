@@ -7,7 +7,8 @@ public static class EndpointExtensions
 {
     public static IApplicationBuilder MapEndpoints(this WebApplication app)
     {
-        var endpoints = app.Services.GetRequiredService<IEnumerable<IEndpoint>>();
+        using var scope = app.Services.CreateScope();
+        var endpoints = scope.ServiceProvider.GetRequiredService<IEnumerable<IEndpoint>>();
 
         foreach (var endpoint in endpoints)
         {
