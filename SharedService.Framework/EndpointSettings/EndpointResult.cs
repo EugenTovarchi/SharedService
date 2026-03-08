@@ -56,6 +56,13 @@ public class EndpointResult : IResult, IEndpointMetadataProvider
             : new ErrorResult(result.Error);
     }
 
+    public EndpointResult(UnitResult<Failure> result)
+    {
+        _result = result.IsSuccess
+            ? new SuccessResult()
+            : result.Error.ToIResult();
+    }
+
     public Task ExecuteAsync(HttpContext httpContext)
     {
         return _result.ExecuteAsync(httpContext);
@@ -72,6 +79,7 @@ public class EndpointResult : IResult, IEndpointMetadataProvider
     }
 
     public static implicit operator EndpointResult(UnitResult<Error> result) => new(result);
+    public static implicit operator EndpointResult(UnitResult<Failure> result) => new(result);
 }
 
 public static class FailureExtensions
