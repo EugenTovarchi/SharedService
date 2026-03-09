@@ -22,7 +22,7 @@ public record Envelope
 
 public record Envelope<T>
 {
-    public object? Result { get; }
+    public T? Result { get; }
     public Failure? Errors { get; }
     public DateTime TimeGenerate { get; }
 
