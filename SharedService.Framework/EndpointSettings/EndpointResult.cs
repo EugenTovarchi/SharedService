@@ -22,7 +22,7 @@ public class EndpointResult<TValue> : IResult, IEndpointMetadataProvider
     public EndpointResult(Result<TValue, Failure> result)
     {
         _result = result.IsSuccess
-            ? Results.Ok(result.Value)
+            ? new SuccessResult<TValue>(result.Value)
             : result.Error.ToIResult();
     }
 
