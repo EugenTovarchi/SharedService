@@ -3,29 +3,30 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Serilog.Extensions" Version="9.1.0"/>
-    <PackageVersion Include="StyleCop.Analyzers" Version="1.1.118"/>
-    <PackageVersion Include="CSharpFunctionalExtensions" Version="3.6.0"/>
-    <PackageVersion Include="FluentValidation" Version="12.1.1"/>
-    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1"/>
-    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0"/>
-    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.10"/>
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10"/>
-    <PackageVersion Include="Scrutor" Version="6.1.0"/>
-    <PackageVersion Include="Serilog" Version="4.3.0"/>
-    <PackageVersion Include="Serilog.AspNetCore" Version="9.0.0"/>
-    <PackageVersion Include="Serilog.Enrichers.Environment" Version="3.0.1"/>
-    <PackageVersion Include="Serilog.Enrichers.Thread" Version="4.0.0"/>
-    <PackageVersion Include="Serilog.Exceptions" Version="8.4.0"/>
-    <PackageVersion Include="Serilog.Exceptions.EntityFrameworkCore" Version="8.4.0"/>
-    <PackageVersion Include="Serilog.Extensions.Hosting" Version="9.0.0"/>
-    <PackageVersion Include="Serilog.Extensions.Logging" Version="9.0.2"/>
-    <PackageVersion Include="Serilog.Settings.Configuration" Version="10.0.0"/>
-    <PackageVersion Include="Serilog.Sinks.Console" Version="6.1.1"/>
-    <PackageVersion Include="Serilog.Sinks.Debug" Version="3.0.0"/>
-    <PackageVersion Include="Serilog.Sinks.Seq" Version="9.0.0"/>
-    <PackageVersion Include="Swashbuckle.AspNetCore.Swagger" Version="10.0.1"/>
-    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.0.1"/>
-    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.0.1"/>
+    <PackageVersion Include="Serilog.Extensions" Version="9.1.0" />
+    <PackageVersion Include="StyleCop.Analyzers" Version="1.1.118" />
+    <PackageVersion Include="CSharpFunctionalExtensions" Version="3.6.0" />
+    <PackageVersion Include="FluentValidation" Version="12.1.1" />
+    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
+    <PackageVersion Include="Scrutor" Version="6.1.0" />
+    <PackageVersion Include="Serilog" Version="4.3.0" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageVersion Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+    <PackageVersion Include="Serilog.Enrichers.Thread" Version="4.0.0" />
+    <PackageVersion Include="Serilog.Exceptions" Version="8.4.0" />
+    <PackageVersion Include="Serilog.Exceptions.EntityFrameworkCore" Version="8.4.0" />
+    <PackageVersion Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+    <PackageVersion Include="Serilog.Extensions.Logging" Version="9.0.2" />
+    <PackageVersion Include="Serilog.Settings.Configuration" Version="10.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Console" Version="6.1.1" />
+    <PackageVersion Include="Serilog.Sinks.Debug" Version="3.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Seq" Version="9.0.0" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.Swagger" Version="10.0.1" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.0.1" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.0.1" />
+    <PackageVersion Include="WolverineFx.Postgresql" Version="5.31.0" />
   </ItemGroup>
 </Project>

@@ -3,11 +3,16 @@
     <ItemGroup>
       <PackageReference Include="CSharpFunctionalExtensions" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+      <PackageReference Include="WolverineFx.Postgresql" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Messaging\Directory\" />
     </ItemGroup>
   
   <PropertyGroup>
     <PackageId>IstredDev.SharedKernel</PackageId>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>Istred</Authors>
     <Company>Istred</Company>
     <PackageDescription>SharedKernel</PackageDescription>
