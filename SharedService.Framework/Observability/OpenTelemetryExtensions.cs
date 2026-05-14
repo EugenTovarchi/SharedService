@@ -40,7 +40,9 @@ public static class OpenTelemetryExtensions
                 metricsBuilder
                     .AddAspNetCoreInstrumentation()
                     .AddHttpClientInstrumentation()
-                    .AddRuntimeInstrumentation();
+                    .AddRuntimeInstrumentation()
+                    .AddMeter("Npgsql")
+                    .AddMeter("Microsoft.EntityFrameworkCore");
 
                 ConfigureOtlpExporter(metricsBuilder, options);
             });
