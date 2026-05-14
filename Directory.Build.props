@@ -1,4 +1,4 @@
-﻿<Project>
+<Project>
   <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers">
       <PrivateAssets>all</PrivateAssets>
