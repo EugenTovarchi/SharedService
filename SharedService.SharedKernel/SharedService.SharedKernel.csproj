@@ -12,7 +12,7 @@
   
   <PropertyGroup>
     <PackageId>IstredDev.SharedKernel</PackageId>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <Authors>Istred</Authors>
     <Company>Istred</Company>
     <PackageDescription>SharedKernel</PackageDescription>
