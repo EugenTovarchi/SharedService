@@ -32,7 +32,7 @@
 
   <PropertyGroup>
     <PackageId>IstredDev.Framework</PackageId>
-    <Version>0.0.13</Version>
+    <Version>0.0.14</Version>
     <Authors>Istred</Authors>
     <Company>Istred</Company>
     <PackageDescription>Framework</PackageDescription>
