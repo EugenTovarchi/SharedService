@@ -13,9 +13,9 @@ public class RequestCorrelationIdMiddleware(RequestDelegate next)
 {
     private const string CORRELATION_ID_HEADER_NAME = "X-Correlation-Id";
 
-    private const string CORRELATION_ID = "Correlation-Id";
+    private const string CORRELATION_ID = "CorrelationId";
 
-    public Task Invoke(HttpContext httpContext)
+    public async Task Invoke(HttpContext httpContext)
     {
         httpContext.Request.Headers.TryGetValue(CORRELATION_ID_HEADER_NAME, out StringValues correlationIdValues);
 
@@ -23,7 +23,7 @@ public class RequestCorrelationIdMiddleware(RequestDelegate next)
 
         using (LogContext.PushProperty(CORRELATION_ID, correlationId))
         {
-            return next(httpContext);
+            await next(httpContext);
         }
     }
 }
