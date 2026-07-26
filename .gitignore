@@ -6,6 +6,9 @@
 # dotenv files
 .env
 
+# Локальные файлы ffmpeg
+ffmpeg/
+
 # User-specific files
 *.rsuser
 *.suo
