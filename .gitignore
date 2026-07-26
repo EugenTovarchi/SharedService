@@ -6,9 +6,6 @@
 # dotenv files
 .env
 
-# Local AI/tooling metadata
-.serena/
-
 # User-specific files
 *.rsuser
 *.suo
